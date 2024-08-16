@@ -1,0 +1,79 @@
+@import './base.css';
+
+#app {
+  width: 100%;
+}
+
+/* 主搜索 */
+.produce-input {
+  position: relative;
+  background-color: var(--main-green10);
+  border-radius: 80px;
+  padding: 10px;
+
+  input {
+    width: 900px;
+    height: 80px;
+    font-size: 18px;
+    border-radius: 80px;
+    border: 1px solid var(--main-green30);
+    padding: 10px 20px;
+
+    &:focus {
+      border: 1px solid var(--main-green);
+    }
+  }
+
+  button {
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: var(--main-green);
+    border: none;
+    border-radius: 80px;
+    cursor: pointer;
+    line-height: 90px;
+
+    svg {
+      width: 42px;
+      height: 42px;
+    }
+  }
+}
+
+/* 标题列表 */
+.produce-titlelist ul {
+  display: flex;
+  justify-content: center;
+  column-gap: 10px;
+
+  li {
+    list-style: none;
+    color: var(--main-black);
+    background-color: var(--bg-grey);
+    padding: 10px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+}
+
+/* 分页 */
+.sources-pagination ul li {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  font-size: 12px;
+  background-color: var(--bg-grey);
+  border-radius: 3px;
+  margin-right: 10px;
+  cursor: pointer;
+  text-align: center;
+
+  &.selected {
+    color: white;
+    background-color: var(--inter-option);
+  }
+}

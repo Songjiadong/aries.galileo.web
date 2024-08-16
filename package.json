@@ -1,0 +1,27 @@
+{
+  "name": "galileo.v0.1",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "build": "vite build",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
+    "dev": "vite",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "sass": "^1.77.8",
+    "vue": "^3.4.29",
+    "vue-router": "^4.4.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.5",
+    "eslint": "^8.57.0",
+    "eslint-plugin-vue": "^9.23.0",
+    "node-sass": "^9.0.0",
+    "sass-loader": "^16.0.0",
+    "style-resources-loader": "^1.4.1",
+    "vite": "^5.3.1",
+    "vue-cli-plugin-style-resources-loader": "~0.1.5"
+  },
+  "type": "module"
+}
